@@ -1,4 +1,4 @@
-#### 🌱 Houseplant Watering Scheduler
+## 🌱 Houseplant Watering Scheduler
 
 ### 📌 Project Overview
 
