@@ -10,7 +10,7 @@ Houseplant Watering Scheduler provides a simple and user-friendly way to manage 
 
 ---
 
-## ✨ Features
+### ✨ Features
 
 * 🌱 Add new plants
 * 🗑️ Remove plants
