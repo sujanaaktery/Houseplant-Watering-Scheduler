@@ -1,8 +1,12 @@
 # 🌱 Houseplant Watering Scheduler
 
-**Houseplant Watering Scheduler (PlantCare)** is a Java Swing desktop application designed to help users manage and track their houseplants' watering schedules.
+## 📌 Project Overview
 
-The application allows users to add, search, remove, and water plants while automatically calculating their next watering date and current watering status.
+**Houseplant Watering Scheduler** is a Java Swing desktop application designed to help users manage and track their houseplants' watering schedules. It allows users to add, search, remove, and water plants while automatically calculating their next watering date and current watering status.
+
+### 📝 Project Summary
+
+Houseplant Watering Scheduler provides a simple and user-friendly way to manage houseplants and their watering schedules. Users can add and manage plant information, search for plants, water them, check their current watering status, and view plant statistics.
 
 ---
 
@@ -30,8 +34,6 @@ The application allows users to add, search, remove, and water plants while auto
 ---
 
 ## 🧩 OOP Concepts
-
-This project demonstrates several Object-Oriented Programming concepts:
 
 * Abstraction
 * Inheritance
@@ -94,7 +96,7 @@ Before running the application, make sure you have:
 3. Open the project.
 4. Build the project.
 5. Run `WelcomeFrame.java`.
-6. Click **Start** to open the main application.
+6. Click **Start** to open the application.
 
 ---
 
@@ -131,7 +133,7 @@ Before running the application, make sure you have:
                            ↓
               ┌────────────┼────────────┬─────────────┐
               ↓            ↓            ↓             ↓
-           Add Plant     Search      Water Now    Statistics
+          Add Plant      Search      Water Now    Statistics
               ↓            ↓            ↓             ↓
           Add Data      Find Plant   Update Date   View Statistics
               └────────────┬───────────┴─────────────┘
@@ -147,9 +149,7 @@ Before running the application, make sure you have:
                           Exit
 ```
 
-The application starts from the **Welcome Frame** and moves to the **Main Frame**.
-
-From the Main Frame, users can add, search, remove, or water plants, check watering reminders, and view plant statistics. Plant data is saved using **Java file serialization**.
+The application starts from the **Welcome Frame** and moves to the **Main Frame**. From the Main Frame, users can add, search, remove, or water plants, check watering reminders, and view statistics. Plant data is saved using file serialization.
 
 ---
 
@@ -189,4 +189,3 @@ The goal of this project is to develop a simple and useful plant management syst
 **Group 01**
 
 ⭐ If you find this project useful, feel free to give it a star!
-
