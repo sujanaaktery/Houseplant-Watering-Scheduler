@@ -1,97 +1,148 @@
-# 🌱 Houseplant Watering Scheduler
+🌱 Houseplant Watering Scheduler
 
-A Java-based desktop application that helps users manage their houseplants and keep track of their watering schedules.
+📌 Project Overview
 
-## 📌 Project Overview
+Houseplant Watering Scheduler (PlantCare) is a Java Swing desktop application designed to help users manage and track their houseplants' watering schedules. It allows users to add, search, remove, and water plants while automatically calculating their next watering date and current watering status.
 
-**Houseplant Watering Scheduler** is a Java Swing application designed to make plant care easier. Users can add plants, assign them to owners, set watering frequencies, and track when each plant needs to be watered.
+✨ Features
 
-The system automatically calculates the next watering date and displays whether a plant is **Due Today**, **Overdue**, or **Not Due Yet**.
+- Add new plants
+- Remove plants
+- Search plants by name
+- Water plants
+- Check watering reminders
+- Track plant status
+- View plant statistics
+- Save plant data using file serialization
 
-## ✨ Features
+🛠️ Technologies Used
 
-* 🌱 Add and manage plants
-* 👤 Store plant owner information
-* 💧 Set watering frequency
-* 📅 Track the last watering date
-* ⏰ Automatically calculate the next watering date
-* ⚠️ Show plant watering status
-* 🔴 Identify overdue plants
-* 🟢 Identify plants that are not due yet
-* 🖥️ User-friendly Java Swing GUI
-* 🔎 Search and view plant information
+- Java
+- Java Swing
+- Java Serialization
+- Java Collections
+- NetBeans IDE
 
-## 🛠️ Technologies Used
+🧩 OOP Concepts
 
-* **Java**
-* **Java Swing**
-* **Object-Oriented Programming (OOP)**
-* **NetBeans IDE**
-* **Git & GitHub**
+- Abstraction
+- Inheritance
+- Polymorphism
+- Encapsulation
+- Interface
+- Singleton Design Pattern
 
-## 🧩 OOP Concepts Used
+📂 Project Structure
 
-This project demonstrates several important OOP concepts:
-
-* **Encapsulation**
-* **Inheritance**
-* **Polymorphism**
-* **Abstraction**
-* **Interfaces**
-
-The project also uses an `Alertable` interface to handle watering-related alerts.
-
-## 📂 Project Structure
-
-```text
 Houseplant-Watering-Scheduler/
 │
 ├── src/
-│   ├── gui/
-│   │   └── MainFrame.java
+│   ├── interfaces/
+│   │   └── Alertable.java
 │   │
 │   ├── plants/
-│   │   └── Plant.java
+│   │   ├── Plant.java
+│   │   ├── Fern.java
+│   │   └── Succulent.java
 │   │
 │   ├── manager/
 │   │   └── PlantManager.java
 │   │
-│   └── interfaces/
-│       └── Alertable.java
+│   └── gui/
+│       ├── WelcomeFrame.java
+│       ├── MainFrame.java
+│       ├── AddPlantFrame.java
+│       └── StatisticsFrame.java
 │
-└── README.md
-```
+├── screenshots/
+│   ├── welcome.png
+│   ├── main.png
+│   ├── add-plant.png
+│   └── statistics.png
+│
+├── README.md
+└── .gitignore
 
-## 🚀 How to Run
+▶️ How to Run
 
-1. Clone the repository.
-2. Open the project in **NetBeans IDE**.
-3. Make sure Java/JDK is installed.
+1. Open the project in NetBeans IDE.
+2. Make sure Java JDK is installed.
+3. Open the project.
 4. Build the project.
-5. Run the `MainFrame` class.
+5. Run "WelcomeFrame.java".
+6. Click Start to open the application.
 
-## 📋 Example
+🖼️ Screenshots
 
-A plant can have information such as:
+1. Welcome Frame
 
-| Information   | Example    |
-| ------------- | ---------- |
-| Owner         | Suva       |
-| Plant Name    | Aloe Vera  |
-| Plant Type    | Succulent  |
-| Frequency     | 7 Days     |
-| Last Watered  | 2026-08-03 |
-| Next Watering | 2026-08-10 |
-| Status        | Overdue    |
+"Welcome Frame" (screenshots/welcome.png)
 
-## 🎯 Project Goal
+2. Main Frame
 
-The main goal of this project is to provide a simple and convenient way to organize houseplant watering schedules while demonstrating practical **Java OOP and GUI programming** concepts.
+"Main Frame" (screenshots/main.png)
 
-## 👩‍💻 Developed By
+3. Add Plant Frame
 
-**Sujana Aktery and my team**
+"Add Plant Frame" (screenshots/add-plant.png)
 
----
+4. Statistics Frame
 
+"Statistics Frame" (screenshots/statistics.png)
+
+🔄 Application Flow
+
+Start Application
+       ↓
+Welcome Frame
+       ↓
+     Start
+       ↓
+   Main Frame
+       ↓
+ ┌─────┼──────────┬─────────────┐
+ ↓     ↓          ↓             ↓
+Add   Search    Water Now    Statistics
+Plant   ↓          ↓             ↓
+      Find      Update       View Plant
+      Plant     Date         Statistics
+ └─────┬──────────┴─────────────┘
+          ↓
+ Check Watering Reminder
+          ↓
+Healthy / Needs Water / Overdue
+          ↓
+   Save Plant Data
+          ↓
+        Exit
+
+The application starts from the Welcome Frame and moves to the Main Frame. From the main frame, users can add, search, remove, or water plants, check reminders, and view statistics. Plant data is saved using file serialization.
+
+💡 Example
+
+Plant Name| Plant Type| Last Watered| Next Due Date| Status
+Peace Lily| Fern| 2026-08-16| 2026-08-18| Needs Water
+Aloe Vera| Succulent| 2026-08-10| 2026-08-17| Overdue
+Money Plant| Fern| 2026-08-17| 2026-08-19| Healthy
+
+The application automatically calculates the Next Due Date and updates the plant's Status based on the current date.
+
+🚀 Future Improvements
+
+- Add more plant types with customizable watering intervals
+- Add automatic desktop notifications for watering reminders
+- Add an option to edit existing plant information
+- Add a calendar-based watering schedule
+- Improve the statistics section with charts and graphs
+- Add user/plant owner management
+- Replace file serialization with a database
+- Add plant images and customizable icons
+
+🎯 Project Goal
+
+The goal of this project is to develop a simple and useful plant management system while applying Java, GUI development, file handling, and Object-Oriented Programming concepts in a practical project.
+
+👥 Developed By
+
+Group 01
 ⭐ If you find this project useful, feel free to give it a star!
