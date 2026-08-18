@@ -1,6 +1,6 @@
 #### 🌱 Houseplant Watering Scheduler
 
-## 📌 Project Overview
+### 📌 Project Overview
 
 **Houseplant Watering Scheduler** is a Java Swing desktop application designed to help users manage and track their houseplants' watering schedules. It allows users to add, search, remove, and water plants while automatically calculating their next watering date and current watering status.
 
