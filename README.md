@@ -23,7 +23,7 @@ Houseplant Watering Scheduler provides a simple and user-friendly way to manage 
 
 ---
 
-## 🛠️ Technologies Used
+### 🛠️ Technologies Used
 
 * **Java**
 * **Java Swing**
